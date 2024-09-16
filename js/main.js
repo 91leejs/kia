@@ -63,79 +63,6 @@ $(function(){
         $(".m_sub").hide();
     })
 
-        
-        var slider1 = $(".best_item1").bxSlider({   
-            infiniteLoop: false,
-            
-        });
-
-                $(".prev1").click(function() {
-                    slider1.goToPrevSlide();
-                });
-            
-                $(".next1").click(function() {
-                    slider1.goToNextSlide();
-                })
-
-        
-        var slider2 = $(".best_item2").bxSlider({
-            infiniteLoop: false,
-            pager:true,
-            touchEnabled:true
-        });
-
-
-
-
-                $(".prev2").click(function() {
-                    slider2.goToPrevSlide();
-                });
-            
-                $(".next2").click(function() {
-                    slider2.goToNextSlide();
-                })
-
-        
-        var slider3 = $(".best_item3").bxSlider({
-            infiniteLoop: false,
-        });
-
-                
-                $(".prev3").click(function() {
-                    slider3.goToPrevSlide();
-                });
-            
-                $(".next3").click(function() {
-                    slider3.goToNextSlide();
-                })
-
-        
-        var slider4 = $(".best_item4").bxSlider({
-            infiniteLoop: false,
-        });
-
-                
-                $(".prev4").click(function() {
-                    slider4.goToPrevSlide();
-                });
-            
-                $(".next4").click(function() {
-                    slider4.goToNextSlide();
-                })
-
-
-
-
-                $(".bx-wrapper,.bi_tag,.prev,.next").hide();
-    
-                
-                $(".best_item_wrap > .bx-wrapper:nth-of-type(1)").show();
-                $(".best_item1_tag").show(); 
-                $(".prev1").show(); 
-                $(".next1").show(); 
-
-
-
 
 
                 function checkWidth() {
@@ -319,6 +246,80 @@ $(function(){
 
 
 })//jQuery
+
+$(window).on('load', function(){
+    var slider1 = $(".best_item1").bxSlider({   
+        infiniteLoop: false,
+        
+    });
+
+
+            $(".prev1").click(function() {
+                slider1.goToPrevSlide();
+            });
+        
+            $(".next1").click(function() {
+                slider1.goToNextSlide();
+            })
+
+    
+    var slider2 = $(".best_item2").bxSlider({
+        infiniteLoop: false,
+        pager:true,
+        touchEnabled:true,
+    });
+
+
+
+
+            $(".prev2").click(function() {
+                slider2.goToPrevSlide();
+            });
+        
+            $(".next2").click(function() {
+                slider2.goToNextSlide();
+            })
+
+    
+    var slider3 = $(".best_item3").bxSlider({
+        infiniteLoop: false,
+    });
+
+            
+            $(".prev3").click(function() {
+                slider3.goToPrevSlide();
+            });
+        
+            $(".next3").click(function() {
+                slider3.goToNextSlide();
+            })
+
+    
+    var slider4 = $(".best_item4").bxSlider({
+        infiniteLoop: false,
+    });
+
+            
+            $(".prev4").click(function() {
+                slider4.goToPrevSlide();
+            });
+        
+            $(".next4").click(function() {
+                slider4.goToNextSlide();
+            })
+
+
+
+
+            $(".bx-wrapper,.bi_tag,.prev,.next").hide();
+
+            
+            $(".best_item_wrap > .bx-wrapper:nth-of-type(1)").show();
+            $(".best_item1_tag").show(); 
+            $(".prev1").show(); 
+            $(".next1").show(); 
+
+});
 
 
 $(window).scroll(function(){

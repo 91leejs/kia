@@ -16,13 +16,13 @@
     hideControlOnEnd: false,
     speed: 300,
     easing: null,
-    slideMargin: 24,
+    slideMargin: 20,
     startSlide: 0,
     randomStart: false,
     captions: false,
     ticker: false,
     tickerHover: false,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     adaptiveHeightSpeed: 500,
     video: false,
     useCSS: true,
@@ -78,8 +78,8 @@
     // CAROUSEL
     minSlides: 1,
     maxSlides: 3,
-    moveSlides: 0,
-    slideWidth: 1344,
+    moveSlides: 1,
+    slideWidth: 432,
     shrinkItems: false,
 
     // CALLBACKS
